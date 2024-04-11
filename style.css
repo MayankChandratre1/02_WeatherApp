@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+ --primary:#5E17EB;
+ --secondary:#5271FF;
+ --tertiary:#fff;
+}
+
+.sans{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+div.container{
+    width: 80%;
+    /* height: 80%; */
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.searchbar *{
+    padding: 1rem;
+    border: none;
+    border-radius:20px;
+    font-size: 1.2rem;
+}
+
+.searchbar input{
+    width: 100%;
+    outline: none;
+}
+
+.searchbar button{
+    width: 30%;
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+
+.searchbar button:hover{
+    cursor: pointer;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary);
+    padding: 1.5rem;
+    border-radius: 30px;
+    gap: 1rem;
+    color: var(--tertiary);
+    font-size: 1.3rem;
+    margin-block: 1rem;
+}
+
+.banner .city{
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.banner .city .city-name{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.banner .city .status{
+    font-size: 2rem;
+}
+
+.banner .status-img-container{
+    display: grid;
+    place-items:center ;
+}
+
+.banner .status-img-container img{
+    width: 200px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    color: var(--tertiary);
+    border-radius: 30px;
+}
+
+
+.card .value{
+    font-size: 4rem;
+    margin-top: 1rem;
+    /* padding: 1rem; */
+    /* background-color: var(--secondary); */
+    border-radius: 30px;
+}
+
+.card .value span{
+    font-size: 2rem;
+}
+
+@media (max-width:690px) {
+    .searchbar{
+        flex-direction: column;
+    }
+    .searchbar *{
+        text-align: center;
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .searchbar button{
+        width: 100%;
+    }
+
+    .banner{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .banner .city .city-name{
+        font-size: 1.7rem;
+    }
+    .banner .city .status{
+        font-size: 1.5rem;
+    }
+   
+    .banner .status-img-container img{
+        width: 20%;
+    }
+
+    .card {
+        font-size: 0.5rem;
+        background-color: var(--primary);
+        padding: 0.7rem;
+        text-align: center;
+        color: var(--tertiary);
+        border-radius: 20px;
+    }
+    
+    
+    .card .value{
+        font-size: 1.7rem;
+        margin-top: 0.5rem;
+        /* background-color: var(--secondary); */
+        border-radius: 30px;
+    }
+    
+    .card .value span{
+        font-size: 1rem;
+    }
+
+}

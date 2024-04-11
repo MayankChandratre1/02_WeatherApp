@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container sans">
+        <div class="searchbar">
+            <input type="text" placeholder="Enter a city" id="city-name-input">
+            <button id="submit">Get Weather</button>
+        </div>
+        <div class="banner">
+            <div class="city">
+                <h1 class="city-name">Weather</h1>
+                <p class="date">10th April 2024</p>
+                <p class="status">Sky</p>
+            </div>
+            <div class="status-img-container">
+                <img src="./assets/Clear.png" id="status-image">
+            </div>
+        </div>
+        <div class="info">
+            <div class="card">
+                <h3 class="title">Temperarture</h3>
+                <p class="value" id="temp">00<br><span>&deg;C</span></p>
+            </div>
+            <div class="card">
+                <h3 class="title">Humidity</h3>
+                <p class="value" id="humidity">00<br><span>g/m<sup>3</sup></span></p>
+            </div>
+            <div class="card">
+                <h3 class="title">Wind</h3>
+                <p class="value" id="wind">00<br><span>kmh</span></p>
+            </div>
+        </div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
