@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import key from "./key.js";
+>>>>>>> 823996d698f0e010238ec4506881e913e6ab451c
 
 const key = API.key
 
