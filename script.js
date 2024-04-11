@@ -1,4 +1,4 @@
-import key from 'key.js';
+import key from './key.js';
 
 // const key = process.env.API_KEY;
 
