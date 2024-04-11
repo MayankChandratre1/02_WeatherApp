@@ -14,7 +14,7 @@ async function getWeather(){
             document.querySelector(".city-name").innerHTML = "Not Found";
         }else{
             const data = await response.json();
-            console.log(data)
+           // console.log(data)
             document.querySelector(".city-name").innerHTML = data.name;
             document.querySelector(".status").innerHTML = data.weather[0].main;
             document.querySelector("#temp").innerHTML = `${data.main.temp}<br><span>&deg;C</span>`;
