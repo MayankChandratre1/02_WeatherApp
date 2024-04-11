@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
-import key from "./key.js";
->>>>>>> 823996d698f0e010238ec4506881e913e6ab451c
 
-const key = API.key
+
+const key = "9cac705eaf333027b25c853d706a52cc"
 
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=";
