@@ -1,6 +1,6 @@
 
 
-const key = "9cac705eaf333027b25c853d706a52cc"
+const key = "API_KEY" //removed due to security
 
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=";
